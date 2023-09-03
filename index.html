@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IQBAL project</title>
+    <link rel="icon" href="peakpx.jpg">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loading-text">IQBAL PRODUCTION</div>
+    <div class="background-blur"></div>
+    <div class="form-container">
+        <form class="login-form">
+            <h2>Login</h2>
+            <input type="text" placeholder="Username" required>
+            <div class="password-wrapper">
+                <input type="password" id="loginpassword" placeholder="Password" required>
+                <ion-icon class="toggle-password" name="eye-outline" onclick="togglePasswordVisibility('loginpassword')"></ion-icon>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <form class="signup-form">
+            <h2>SignUp</h2>
+            <input type="text" placeholder="Username" required>
+            <input type="email" placeholder="Email" required>
+            <div class="password-wrapper">
+                <input type="password" id="signupnPassword" placeholder="password" required>
+                <ion-icon class="toggle-password" name="eye-outline" onclick="togglePasswordVisibility('signupnPassword')"></ion-icon>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
